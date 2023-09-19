@@ -10,14 +10,18 @@ export class OwlTodoList extends Component {
       tasklist: [],
     });
     this.orm = useService("orm");
+    this.model = "owl.todo";
 
     onWillStart(async () => {
-      this.state.tasklist = await this.orm.searchRead(
-        "owl.todo",
-        [],
-        ["name", "color", "completed"]
-      );
+      await this.getAllTask();
     });
+  }
+  async getAllTask() {
+    this.state.tasklist = await this.orm.searchRead(
+      this.model,
+      [],
+      ["name", "color", "completed"]
+    );
   }
 }
 
