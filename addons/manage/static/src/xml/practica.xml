@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding='utf-8'?>
-<template id="my_widget_template">
-    <input type="text" class="my-widget" value="${this.value}" />
-</template>

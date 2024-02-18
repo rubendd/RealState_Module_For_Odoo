@@ -1,0 +1,152 @@
+<odoo>
+  <data>
+
+    <record id="property_type_house" model="realstate.type">
+      <field name="name">Casa</field>
+    </record>
+
+    <record id="property_type_apartment" model="realstate.type">
+      <field name="name">Apartamento</field>
+    </record>
+
+    <record id="property_type_villa" model="realstate.type">
+      <field name="name">Villa</field>
+    </record>
+     
+    <record id="property_1" model="realstate.property">
+      <field name="name">Casa de Lujo 1</field>
+      <field name="expected_price">1000000</field>
+      <field name="selling_price">1100000</field>
+      <field name="bedrooms">5</field>
+      <field name="living_area">300</field>
+      <field name="facades">4</field>
+      <field name="garden">True</field>
+      <field name="property_type_id" ref="property_type_house"/>
+      <field name="buyer" ref="buyer_1"/>
+      <field name="user" ref="seller_1"/>
+    </record>
+
+    <record id="property_2" model="realstate.property">
+      <field name="name">Apartamento Moderno 1</field>
+      <field name="expected_price">500000</field>
+      <field name="selling_price">520000</field>
+      <field name="bedrooms">2</field>
+      <field name="living_area">100</field>
+      <field name="facades">1</field>
+      <field name="garden">False</field>
+      <field name="property_type_id" ref="property_type_apartment"/>
+      <field name="buyer" ref="buyer_2"/>
+      <field name="user" ref="seller_2"/>
+    </record>
+
+    <record id="property_3" model="realstate.property">
+      <field name="name">Casa Moderna 1</field>
+      <field name="expected_price">750000</field>
+      <field name="selling_price">780000</field>
+      <field name="bedrooms">4</field>
+      <field name="living_area">250</field>
+      <field name="facades">3</field>
+      <field name="garden">True</field>
+      <field name="property_type_id" ref="property_type_house"/>
+      <field name="buyer" ref="buyer_3"/>
+      <field name="user" ref="seller_3"/>
+    </record>
+
+    <record id="property_4" model="realstate.property">
+      <field name="name">Apartamento con Vista al Mar</field>
+      <field name="expected_price">800000</field>
+      <field name="selling_price">820000</field>
+      <field name="bedrooms">3</field>
+      <field name="living_area">150</field>
+      <field name="facades">1</field>
+      <field name="garden">False</field>
+      <field name="property_type_id" ref="property_type_apartment"/>
+      <field name="buyer" ref="buyer_1"/>
+      <field name="user" ref="seller_1"/>
+    </record>
+
+    <record id="property_5" model="realstate.property">
+      <field name="name">Casa de Campo Acogedora</field>
+      <field name="expected_price">600000</field>
+      <field name="selling_price">620000</field>
+      <field name="bedrooms">4</field>
+      <field name="living_area">200</field>
+      <field name="facades">2</field>
+      <field name="garden">True</field>
+      <field name="property_type_id" ref="property_type_house"/>
+      <field name="buyer" ref="buyer_2"/>
+      <field name="user" ref="seller_2"/>
+    </record>
+
+    <record id="property_6" model="realstate.property">
+      <field name="name">Apartamento Elegante en el Centro</field>
+      <field name="expected_price">450000</field>
+      <field name="selling_price">470000</field>
+      <field name="bedrooms">2</field>
+      <field name="living_area">120</field>
+      <field name="facades">1</field>
+      <field name="garden">False</field>
+      <field name="property_type_id" ref="property_type_apartment"/>
+      <field name="buyer" ref="buyer_3"/>
+      <field name="user" ref="seller_3"/>
+    </record>
+
+    <record id="property_7" model="realstate.property">
+      <field name="name">Villa de Lujo con Piscina</field>
+      <field name="expected_price">1500000</field>
+      <field name="selling_price">1550000</field>
+      <field name="bedrooms">5</field>
+      <field name="living_area">400</field>
+      <field name="facades">4</field>
+      <field name="garden">True</field>
+      <field name="garden_area">500</field>
+      <field name="property_type_id" ref="property_type_villa"/>
+      <field name="buyer" ref="buyer_4"/>
+      <field name="user" ref="seller_1"/>
+    </record>
+
+    <record id="property_8" model="realstate.property">
+      <field name="name">Piso Moderno en el Centro</field>
+      <field name="expected_price">500000</field>
+      <field name="selling_price">510000</field>
+      <field name="bedrooms">3</field>
+      <field name="living_area">120</field>
+      <field name="facades">1</field>
+      <field name="garden">False</field>
+      <field name="property_type_id" ref="property_type_apartment"/>
+      <field name="buyer" ref="buyer_5"/>
+      <field name="user" ref="seller_2"/>
+    </record>
+
+    <record id="property_9" model="realstate.property">
+      <field name="name">Chalet con Vistas Panorámicas</field>
+      <field name="expected_price">850000</field>
+      <field name="selling_price">880000</field>
+      <field name="bedrooms">4</field>
+      <field name="living_area">300</field>
+      <field name="facades">2</field>
+      <field name="garden">True</field>
+      <field name="garden_area">400</field>
+      <field name="property_type_id" ref="property_type_house"/>
+      <field name="buyer" ref="buyer_6"/>
+      <field name="user" ref="seller_3"/>
+    </record>
+
+    <record id="property_10" model="realstate.property">
+      <field name="name">Casa Adosada con Jardín</field>
+      <field name="expected_price">400000</field>
+      <field name="selling_price">410000</field>
+      <field name="bedrooms">3</field>
+      <field name="living_area">150</field>
+      <field name="facades">2</field>
+      <field name="garden">True</field>
+      <field name="garden_area">200</field>
+      <field name="property_type_id" ref="property_type_house"/>
+      <field name="buyer" ref="buyer_7"/>
+      <field name="user" ref="seller_1"/>
+    </record>
+
+   
+
+  </data>
+</odoo>
