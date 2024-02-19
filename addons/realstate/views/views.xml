@@ -1,7 +1,6 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-
     <record model="ir.ui.view" id="realstate_property_list_view">
       <field name="name">realstate property list</field>
       <field name="model">realstate.property</field>

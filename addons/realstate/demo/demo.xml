@@ -1,18 +1,5 @@
 <odoo>
   <data>
-
-    <record id="property_type_house" model="realstate.type">
-      <field name="name">Casa</field>
-    </record>
-
-    <record id="property_type_apartment" model="realstate.type">
-      <field name="name">Apartamento</field>
-    </record>
-
-    <record id="property_type_villa" model="realstate.type">
-      <field name="name">Villa</field>
-    </record>
-     
     <record id="property_1" model="realstate.property">
       <field name="name">Casa de Lujo 1</field>
       <field name="expected_price">1000000</field>
@@ -20,10 +7,7 @@
       <field name="bedrooms">5</field>
       <field name="living_area">300</field>
       <field name="facades">4</field>
-      <field name="garden">True</field>
-      <field name="property_type_id" ref="property_type_house"/>
-      <field name="buyer" ref="buyer_1"/>
-      <field name="user" ref="seller_1"/>
+      <field name="garden">True</field>     
     </record>
 
     <record id="property_2" model="realstate.property">
@@ -33,10 +17,7 @@
       <field name="bedrooms">2</field>
       <field name="living_area">100</field>
       <field name="facades">1</field>
-      <field name="garden">False</field>
-      <field name="property_type_id" ref="property_type_apartment"/>
-      <field name="buyer" ref="buyer_2"/>
-      <field name="user" ref="seller_2"/>
+      <field name="garden">False</field>      
     </record>
 
     <record id="property_3" model="realstate.property">
@@ -46,10 +27,7 @@
       <field name="bedrooms">4</field>
       <field name="living_area">250</field>
       <field name="facades">3</field>
-      <field name="garden">True</field>
-      <field name="property_type_id" ref="property_type_house"/>
-      <field name="buyer" ref="buyer_3"/>
-      <field name="user" ref="seller_3"/>
+      <field name="garden">True</field>      
     </record>
 
     <record id="property_4" model="realstate.property">
@@ -60,9 +38,6 @@
       <field name="living_area">150</field>
       <field name="facades">1</field>
       <field name="garden">False</field>
-      <field name="property_type_id" ref="property_type_apartment"/>
-      <field name="buyer" ref="buyer_1"/>
-      <field name="user" ref="seller_1"/>
     </record>
 
     <record id="property_5" model="realstate.property">
@@ -73,9 +48,6 @@
       <field name="living_area">200</field>
       <field name="facades">2</field>
       <field name="garden">True</field>
-      <field name="property_type_id" ref="property_type_house"/>
-      <field name="buyer" ref="buyer_2"/>
-      <field name="user" ref="seller_2"/>
     </record>
 
     <record id="property_6" model="realstate.property">
@@ -86,9 +58,6 @@
       <field name="living_area">120</field>
       <field name="facades">1</field>
       <field name="garden">False</field>
-      <field name="property_type_id" ref="property_type_apartment"/>
-      <field name="buyer" ref="buyer_3"/>
-      <field name="user" ref="seller_3"/>
     </record>
 
     <record id="property_7" model="realstate.property">
@@ -99,10 +68,7 @@
       <field name="living_area">400</field>
       <field name="facades">4</field>
       <field name="garden">True</field>
-      <field name="garden_area">500</field>
-      <field name="property_type_id" ref="property_type_villa"/>
-      <field name="buyer" ref="buyer_4"/>
-      <field name="user" ref="seller_1"/>
+      <field name="garden_area">500</field>      
     </record>
 
     <record id="property_8" model="realstate.property">
@@ -113,9 +79,6 @@
       <field name="living_area">120</field>
       <field name="facades">1</field>
       <field name="garden">False</field>
-      <field name="property_type_id" ref="property_type_apartment"/>
-      <field name="buyer" ref="buyer_5"/>
-      <field name="user" ref="seller_2"/>
     </record>
 
     <record id="property_9" model="realstate.property">
@@ -127,9 +90,6 @@
       <field name="facades">2</field>
       <field name="garden">True</field>
       <field name="garden_area">400</field>
-      <field name="property_type_id" ref="property_type_house"/>
-      <field name="buyer" ref="buyer_6"/>
-      <field name="user" ref="seller_3"/>
     </record>
 
     <record id="property_10" model="realstate.property">
@@ -141,9 +101,6 @@
       <field name="facades">2</field>
       <field name="garden">True</field>
       <field name="garden_area">200</field>
-      <field name="property_type_id" ref="property_type_house"/>
-      <field name="buyer" ref="buyer_7"/>
-      <field name="user" ref="seller_1"/>
     </record>
 
    
